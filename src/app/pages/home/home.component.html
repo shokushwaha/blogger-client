@@ -11,22 +11,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3">
-                <app-post-cards></app-post-cards>
-
+            <div *ngFor="let item of postFeatured" class="col-lg-3">
+                <app-post-cards [postData]= "item"></app-post-cards>
             </div>
-            <div class="col-lg-3">
-                <app-post-cards></app-post-cards>
-
-            </div>
-            <div class="col-lg-3">
-                <app-post-cards></app-post-cards>
-
-            </div>
-            <div class="col-lg-3">
-                <app-post-cards></app-post-cards>
-
-            </div>
+            
         </div>
     </div>
 
@@ -41,26 +29,12 @@
             doloribus quod ad!
         </p>
     </div>
-    <div class="row">
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
+    <div class="row"  >
+        <div class="col-md-4 mt-3" *ngFor="let item of AllPost">
+            <app-post-cards [postData]= "item"></app-post-cards>
         </div>
        
+
     </div>
 
 </section>

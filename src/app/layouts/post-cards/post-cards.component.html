@@ -1,27 +1,26 @@
 <div class="card">
-    <img src="https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=400"
-        alt="post-image" class="card-img-top">
+    <img src={{postData?.data?.postImagPath}} alt="post-image" class="card-img-top">
     <div class="card-body">
         <small class="bg-light text-danger text-center">
-            Design
+        {{postData?.data?.category.category}}
         </small>
 
         <small class="bg-light ml-3 text-danger text-center">
-            Featured
+            {{postData?.data?.isFeatured ? 'Featured' : ''}}
         </small>
         <small class="bg-light ml-3 text-danger text-center">
-            Views -15203
+            {{postData?.data?.views}}
         </small>
         <h5 class="mt-1">
-            How to create a new post on your site
+            {{postData?.data?.title}}
+
         </h5>
         <p class="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde amet natus, obcaecati soluta quia modi.
-            Repellat consequatur neque qui ut magnam, iste beatae natus velit porro eius omnis amet! At.
+            {{postData?.data?.excerpt}}
         </p>
 
         <small class="bg-light text-danger text-center">
-            2021.20.30 Last update
+            {{postData?.data?.createdAt.toMillis() | date}}
         </small>
     </div>
 
