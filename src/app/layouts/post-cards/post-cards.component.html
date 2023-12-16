@@ -1,8 +1,8 @@
-<div class="card">
+<div class="card" [routerLink]="['/post',postData.id]">
     <img src={{postData?.data?.postImagPath}} alt="post-image" class="card-img-top">
     <div class="card-body">
         <small class="bg-light text-danger text-center">
-        {{postData?.data?.category.category}}
+            {{postData?.data?.category.category}}
         </small>
 
         <small class="bg-light ml-3 text-danger text-center">

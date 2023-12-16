@@ -9,8 +9,8 @@ import { TermsConditionComponent } from './pages/terms-condition/terms-condition
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'category', component: SingleCategoryComponent },
-  { path: 'post', component: SinglePostComponent },
+  { path: 'category/:id', component: SingleCategoryComponent },
+  { path: 'post/:id', component: SinglePostComponent },
   { path: 'about', component: AboutUsComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'terms', component: TermsConditionComponent },

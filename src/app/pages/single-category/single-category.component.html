@@ -8,25 +8,11 @@
     </div>
 </div>
 
-<div class="container mt-5 mb-5" >
-    <div class="row">
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
+<div class="container mt-5 mb-5">
+    <div class="row" >
+        <div class="col-md-4 mt-3" *ngFor="let item of categotyPostArray">
+            <app-post-cards [postData]="item"></app-post-cards>
         </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
-        <div class="col-md-4 mt-3">
-            <app-post-cards></app-post-cards>
-        </div>
+
     </div>
 </div>
