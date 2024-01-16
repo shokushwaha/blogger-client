@@ -2,7 +2,7 @@
     <div class="container">
         <div class="collapse navbar-collapse justify-content-center">
             <ul *ngFor="let item of category" class="navbar-nav">
-                <li class="nav-item ml-3"><a class="nav-link" [routerLink]="['/category',item.id]"
+                <li class="nav-item ml-3"><a class="nav-link" [routerLink]="['/category',item.data.category,item.id ]"
                         href="">{{item.data.category
                         }}</a></li>
 
